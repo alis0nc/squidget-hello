@@ -1,6 +1,6 @@
 {
   "name": "@alisonc/squidget-hello",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/index.cjs.js",
   "es2015": "dist/esm/index.js",
   "es2017": "dist/esm/index.js",
@@ -14,7 +14,7 @@
     "grapesjs/"
   ],
   "scripts": {
-    "build": "stencil build --docs",
+    "build": "stencil build --docs && sed -ie 's/, window.location.origin//' dist/squidget-hello/squidget-hello.js",
     "build:dev": "cross-env NODE_ENV=dev stencil build --docs",
     "build:grapes": "cross-env BUILD=DOCS stencil build --watch --docs",
     "serve:grapes": "npx http-server . --cors -c-1 -p 8081",
