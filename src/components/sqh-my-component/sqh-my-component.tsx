@@ -53,6 +53,7 @@ function useMyComponentDemo(props: MyComponent) {
       data: {
         firstName: "Bob",
         lastName: "Testerson",
+        referralCount: 69,
       },
     },
     props.demoData || {},

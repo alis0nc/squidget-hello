@@ -12,6 +12,9 @@ const GET_NAME = gql`
       ... on User {
         firstName
         lastName
+        referrals {
+          totalCount
+        }
       }
     }
   }
@@ -27,6 +30,7 @@ export function useMyComponent(props: MyComponent) {
     data: {
       firstName: data?.viewer?.firstName,
       lastName: data?.viewer?.lastName,
+      referralCount: data?.viewer?.referrals?.totalCount,
     },
     callbacks: {},
   };

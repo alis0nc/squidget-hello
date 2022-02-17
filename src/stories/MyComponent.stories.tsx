@@ -10,7 +10,7 @@ export default {
 };
 
 function setupGraphQL() {
-  window.widgetIdent = undefined
+  window.widgetIdent = undefined;
 }
 
 export const MyComponent = () => {
@@ -24,6 +24,7 @@ export const MyComponent = () => {
     data: {
       firstName: "Bob",
       lastName: "Testerson",
+      referralCount: 69,
     },
   };
   return <MyComponentView {...props}></MyComponentView>;
@@ -40,6 +41,7 @@ export const MyComponentLoading = () => {
     data: {
       firstName: "Bob",
       lastName: "Testerson",
+      referralCount: 69,
     },
   };
   return <MyComponentView {...props}></MyComponentView>;

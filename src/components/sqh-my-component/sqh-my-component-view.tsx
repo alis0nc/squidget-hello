@@ -13,6 +13,7 @@ export interface MyComponentViewProps {
   data: {
     firstName: string;
     lastName: string;
+    referralCount: number;
   };
 }
 
@@ -58,7 +59,8 @@ export function MyComponentView(props: MyComponentViewProps) {
         {states.content.myTitle}{" "}
         <b>
           {data.firstName} {data.lastName}
-        </b>
+        </b>{" "}
+        has <b>{data.referralCount}</b> referrals
       </div>
     </div>
   );

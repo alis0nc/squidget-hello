@@ -7,10 +7,10 @@
 
 ## Properties
 
-| Property   | Attribute  | Description | Type                                                                                                                  | Default     |
-| ---------- | ---------- | ----------- | --------------------------------------------------------------------------------------------------------------------- | ----------- |
-| `demoData` | --         |             | `{ states?: { loading: boolean; content: { myTitle: string; }; }; data?: { firstName: string; lastName: string; }; }` | `undefined` |
-| `myTitle`  | `my-title` |             | `string`                                                                                                              | `undefined` |
+| Property   | Attribute  | Description | Type                                                                                                                                         | Default     |
+| ---------- | ---------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| `demoData` | --         |             | `{ states?: { loading: boolean; content: { myTitle: string; }; }; data?: { firstName: string; lastName: string; referralCount: number; }; }` | `undefined` |
+| `myTitle`  | `my-title` |             | `string`                                                                                                                                     | `undefined` |
 
 
 ## Dependencies
