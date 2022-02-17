@@ -1,0 +1,91 @@
+@mixin StarterMixin {
+  .StarterMixin {
+    border: 1px solid grey;
+    width: 300px;
+    height: 300px;
+    place-self: center;
+    display: grid;
+  }
+}
+
+@mixin StarterMixinInner {
+  .StarterMixinInner {
+    position: relative;
+    place-self: center;
+  }
+}
+
+@mixin HostBlock {
+  :host {
+    display: block;
+  }
+  :host([hidden]) {
+    display: none;
+  }
+}
+
+@mixin LoadingWrapper {
+  .LoadingWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+  }
+}
+
+@mixin LoadingCSS {
+  .LoadingCSS {
+    position: relative;
+    margin-top: 64px;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #ccc;
+    color: #ccc;
+    animation: dotFlashing 1s infinite linear alternate;
+    animation-delay: 0.5s;
+
+    &::before,
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+    }
+
+    &::before {
+      left: -15px;
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      background-color: #ccc;
+      color: #ccc;
+      animation: dotFlashing 1s infinite alternate;
+      animation-delay: 0s;
+    }
+
+    &::after {
+      left: 15px;
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      background-color: #ccc;
+      color: #ccc;
+      animation: dotFlashing 1s infinite alternate;
+      animation-delay: 1s;
+    }
+
+    @keyframes dotFlashing {
+      0% {
+        background-color: #ccc;
+      }
+      50%,
+      100% {
+        background-color: #eee;
+      }
+    }
+  }
+}
