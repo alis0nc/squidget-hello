@@ -24,7 +24,7 @@ const useGrapesjs: OutputTarget = grapesJsOutput({
 });
 
 export const config: Config = {
-  namespace: "widget-starter",
+  namespace: "squidget-hello",
   globalScript: "src/global/global.ts",
   buildEs5: true,
   outputTargets:

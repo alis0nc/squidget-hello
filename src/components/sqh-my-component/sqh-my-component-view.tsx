@@ -26,6 +26,10 @@ const style = {
     height: "100vh",
     width: "100%",
   },
+  Ugly: {
+    fontSize: "42px",
+    color: "#ff00ff",
+  },
 };
 
 // JSS config
@@ -40,7 +44,7 @@ export function MyComponentView(props: MyComponentViewProps) {
     return (
       <div class={sheet.classes.StarterMixin}>
         <style type="text/css">{styleString}</style>
-        <div class={sheet.classes.StarterMixinInner}>
+        <div class={sheet.classes.Ugly}>
           <LoadingState />
         </div>
       </div>
@@ -50,7 +54,7 @@ export function MyComponentView(props: MyComponentViewProps) {
     // StarterMixin defined in ./global/mixins.ts
     <div class={sheet.classes.StarterMixin}>
       <style type="text/css">{styleString}</style>
-      <div class={sheet.classes.StarterMixinInner}>
+      <div class={sheet.classes.Ugly}>
         {states.content.myTitle}{" "}
         <b>
           {data.firstName} {data.lastName}

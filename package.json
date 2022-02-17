@@ -1,6 +1,6 @@
 {
-  "name": "@saasquatch-themes/widget-starter",
-  "version": "1.0.1",
+  "name": "@alisonc/squidget-hello",
+  "version": "0.0.2",
   "main": "dist/index.cjs.js",
   "es2015": "dist/esm/index.js",
   "es2017": "dist/esm/index.js",
